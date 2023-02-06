@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ @apply bg-gray-50 dark:bg-slate-900;
+}
+.emoji-mart-dark * {
+ @apply dark:bg-slate-900 font-sans !important;
+}
+.white {
+ @apply bg-white shadow-md shadow-gray-100 border dark:shadow-none dark:text-black border-gray-100 p-6 mb-5 rounded-2xl max-w-md h-72;
+}
+
+.indigo {
+ @apply bg-indigo-500 text-white p-6 mb-5 rounded-2xl max-w-md h-72;
+}
+.indigo textarea {
+ @apply text-white bg-indigo-500 placeholder:text-white;
+}
+
+.yellow {
+ @apply bg-yellow-400  p-6 mb-5 rounded-2xl max-w-md h-72;
+}
+.yellow textarea {
+ @apply bg-yellow-400 placeholder:text-black;
+}
+
+.orange {
+ @apply bg-orange-400  p-6 mb-5 rounded-2xl max-w-md h-72;
+}
+.orange textarea {
+ @apply bg-orange-400 placeholder:text-black;
+}
+
+.blue {
+ @apply bg-blue-500 text-white  p-6 mb-5 rounded-2xl max-w-md h-72;
+}
+.blue textarea {
+ @apply bg-blue-500 placeholder:text-white;
+}
+.emoji-mart-title-label,
+.emoji-mart-preview-emoji {
+ display: none;
+}
+.emoji-mart-preview {
+ height: 42px !important;
+}
